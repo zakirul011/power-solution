@@ -1,0 +1,47 @@
+
+/*========== LG-DESKTOP : BETWEEN 992PX TO 1199px. ==========*/
+@media (min-width: 769px) and (max-width: 1440px) {
+   
+}
+
+/*========== MD-TABLET : BETWEEN 768PX TO 991PX ==========*/
+@media (min-width: 376px) and (max-width: 768px) {
+   .container{
+      max-width: 670px;
+   }
+   h5 {
+      font-size: 20px;
+   }
+   .logo img {
+      max-width: 11em;
+   }
+   .hero-area {
+      padding-top: 2em;
+      padding-bottom: 8em;
+   }
+   .slick-arrow {
+      font-size: .8em;
+      opacity: 1;
+   }
+}
+
+/*========== SMALL MOBILE : SMALLER THEN 767PX ==========*/
+@media (max-width: 375px) {
+   body{
+      font-size: 14px;
+   }
+   h5 {
+      font-size: 18px;
+   }
+   .hero-area {
+      padding-top: 0em;
+      padding-bottom: 8em;
+   }
+   .logo img {
+      max-width: 9em;
+   }
+   .slick-arrow {
+      font-size: .8em;
+      opacity: 1;
+   }
+}

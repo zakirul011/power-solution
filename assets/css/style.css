@@ -1,0 +1,240 @@
+/*========== FONT LIKED HERE ==========*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+/*========== FONT LIKED HERE// ==========*/
+
+/*========== BASIC STYLE ==========*/
+:root {
+   --theme-color: #001652;
+   --theme2-color: #F16720;
+   --heading-color: #000;
+   --text-color: #000;
+   --gray-color: #877F7F99;
+   --font-family: 'Roboto', sans-serif;
+   scroll-behavior: smooth;
+}
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+html,
+body {
+   overflow-x: hidden;
+   position: relative;
+}
+body {
+   font-family: var(--font-family);
+   font-weight: normal;
+   font-style: normal;
+   color: var(--text-color);
+   font-size: 16px;
+}
+p {
+   line-height: 1.667;
+   margin-bottom: 15px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   font-family: var(--font-family);
+   color: var(--heading-color);
+   margin-bottom: 15px;
+   font-weight: 700;
+   line-height: 1.4;
+}
+h1 {font-size: 65px;}
+h2 {font-size: 48px;}
+h3 {font-size: 40px;}
+h4 {font-size: 32px;}
+h5 {font-size: 24px;}
+h6 {font-size: 16px;}
+img {
+   max-width: 100%;
+   transition: 0.3s;
+   vertical-align: middle;
+}
+a {
+   text-decoration: none;
+}
+a:hover{
+   color: var(--theme-color);
+}
+a,
+button {
+   transition: 0.3s ease;
+   color: inherit;
+   outline: medium none;
+   font-size: inherit;
+   font-family: inherit;
+   cursor: pointer;
+   background: none;
+   border: 0;
+}
+button:focus,
+input:focus,
+textarea:focus {
+   outline: 0;
+}
+ul {
+   margin: 0px;
+   padding: 0px;
+}
+li {
+   list-style: none;
+}
+*::-moz-selection {
+   background: #007acc;
+   color: #fff;
+   text-shadow: none;
+}
+*::selection {
+   background: #007acc;
+   color: #fff;
+   text-shadow: none;
+}
+/* INPUT, SELECT, TEXTAREA, PLACEHOLDER */
+input, textarea {
+	width: 100%;
+	padding: 1.5em;
+	padding-left: 2.2em;
+	font-size: 16px;
+	transition: 0.3s ease;
+	border: 1px solid transparent;
+	font-weight: 500;
+	background: #fff;
+	color: #222;
+}
+input:focus,
+textarea:focus {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+::-moz-placeholder,
+::placeholder {
+    color: #6e6e6e;
+    opacity: 1;
+}
+::-ms-placeholder {
+    color: #6e6e6e;
+}
+::-webkit-input-placeholder {
+    color: #6e6e6e;
+}
+/*========== BASIC STYLE// ==========*/
+
+/*========== CONTAINER WIDTH ==========*/
+.container {
+   max-width: 1170px;
+}
+/*========== CONTAINER WIDTH// ==========*/
+
+/*========== GLOBAL CSS ==========*/
+.text-theme {
+   color: var(--theme-color) !important;
+}
+.text-white {
+   color: #fff !important;
+}
+.white-content h1,
+.white-content h2,
+.white-content h3,
+.white-content h4,
+.white-content h5,
+.white-content h6,
+.white-content p{
+   color: #fff;
+}
+
+/*========== HEADER AREA ==========*/
+.header-area {
+   padding: 1.3em 0;
+ }
+ .logo img {
+   max-width: 12.5em;
+ }
+ .link-text {
+	display: block;
+	color: #fff;
+	font-size: 1.25em;
+	font-weight: 500;
+	text-align: center;
+	margin-bottom: .35em;
+}
+.link-text:hover {
+	color: var(--theme2-color);
+}
+ .btn-link {
+   display: inline-block;
+   color: #fff;
+   background: var(--theme2-color);
+   padding: .4em 1.1em;
+   border-radius: 3em;
+   font-size: 1.15em;
+   font-weight: 500;
+ }
+ .btn-link:hover {
+   background: #fff;
+   color: var(--theme2-color);
+ }
+/*========== HEADER AREA// ==========*/
+
+/*========== HERO AREA ==========*/
+.hero-area {
+   padding-top: 4em;
+   padding-bottom: 10em;
+}
+/*========== HERO AREA// ==========*/
+
+/*========== TESTIMONY AREA ==========*/
+.testimony-title {
+	padding: 1.3em 0;
+}
+.testimony-title h5 {
+   margin-bottom: 0;
+}
+.testimony-slider {
+	padding: 5em 0;
+}
+.slick-arrow {
+	height: 3em;
+	width: 3em;
+	background: var(--gray-color);
+	border-radius: 50%;
+	position: absolute;
+	top: 50%;
+	left: 1%;
+	transform: translateY(-50%);
+   display: grid;
+   place-content: center;
+   z-index: 9;
+   opacity: 0;
+}
+.slick-slider:hover .slick-arrow {
+   opacity: .8;
+}
+.slick-arrow.slick-next {
+   right: 1%;
+   left: auto;
+}
+.slick-arrow::after {
+  content: '';
+  border-top: .7em solid transparent;
+  border-bottom: .7em solid transparent;
+  border-right: .8em solid #fff;
+  margin-right: .1em;
+}
+.slick-arrow.slick-next::after {
+   transform: rotateY(180deg);
+}
+.testimony-slide.slick-current img {
+	transform: scale(1.25);
+}
+/*========== TESTIMONY AREA// ==========*/
+
+/*========== FOOTER AREA ==========*/
+.footer-area {
+	padding: 1.7em;
+}
+/*========== FOOTER AREA// ==========*/
